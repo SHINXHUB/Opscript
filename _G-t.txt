@@ -2468,7 +2468,7 @@ spawn(function()
                         end
                                 MagnetDought = false
                                 UnEquipWeapon(_G.SelectWeapon)
-                                ATween(CFrame.new(-2091.911865234375, 70.00884246826172, -12142.8359375))
+                                ATween(CFrame.new(-1910.14526, 236.548492, -12786.249, -0.192881584, 0.847598016, 0.494342357, -0.940045059, -0.0152070522, -0.340711027, -0.281268507, -0.530420959, 0.799713433))
                                 if game:GetService("ReplicatedStorage"):FindFirstChild("Cookie Crafter") then
                                     ATween(game:GetService("ReplicatedStorage"):FindFirstChild("Cookie Crafter").HumanoidRootPart.CFrame * CFrame.new(2,20,2)) 
                                 else
@@ -2500,7 +2500,7 @@ spawn(function()
         end
     end
 end)   
-local CakeQuestPos = CFrame.new(-2021.32007, 37.7982254, -12028.7295, 0.957576931, -8.80302053e-08, 0.288177818, 6.9301187e-08, 1, 7.51931211e-08, -0.288177818, -5.2032135e-08, 0.957576931)
+local CakeQuestPos = CFrame.new(-1928.31824, 38.0616417, -12840.624, 0.951068401, -0, -0.308980465, 0, 1, -0, 0.308980465, 0, 0.951068401)
 spawn(function()
     while wait() do
         if CakeFMode == "Quest" and _G.AutoDoughtBoss and World3  then
@@ -2553,7 +2553,7 @@ spawn(function()
                     ATween(CakeQuestPos)
                 end
                 if (CakeQuestPos.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3 then                            
-                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest","CakeQuest1",1)
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest","CakeQuest2",2)
                 end
                 elseif game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
                     if game:GetService("Workspace").Enemies:FindFirstChild("Cookie Crafter") or game:GetService("Workspace").Enemies:FindFirstChild("Cake Guard") or game:GetService("Workspace").Enemies:FindFirstChild("Baking Staff") or game:GetService("Workspace").Enemies:FindFirstChild("Head Baker") then
